@@ -1,3 +1,7 @@
+function doGet() {
+  return ContentService.createTextOutput("Python quiz response endpoint is ready.");
+}
+
 function doPost(event) {
   const payload = JSON.parse(event.postData.contents);
   validatePayload(payload);

@@ -427,8 +427,8 @@ async function saveResponses(responses, score) {
       }),
     });
     saveStatus.textContent =
-      "Your answers have been sent. If they don’t appear in the Sheet, please tell your teacher.";
-    saveStatus.dataset.state = "saved";
+      "Your submission request was sent, but this page cannot confirm it was saved. Please check with your teacher if you don’t see it in the Sheet.";
+    saveStatus.dataset.state = "pending";
   } catch {
     saveStatus.textContent =
       "We couldn’t send your answers. Please take a screenshot of your score and tell your teacher.";

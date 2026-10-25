@@ -11,8 +11,11 @@ The quiz is a static site and can be deployed directly from this folder to Verce
 5. Set **Execute as** to **Me** and **Who has access** to **Anyone**, then deploy and authorize the script.
 6. Copy the Web app URL ending in `/exec`.
 7. In `app.js`, replace the empty value in `SHEETS_WEB_APP_URL` with that URL. Save the file.
+8. Open the `/exec` URL in a private/incognito browser window where you are signed out of Google. It should display `Python quiz response endpoint is ready.` If Google asks you to sign in or request access, edit the deployment so **Who has access** is **Anyone**, deploy a new version, and try again.
 
 The web app must be accessible to anyone with the link so student submissions can reach it. The endpoint accepts quiz submissions from the public; do not use it for sensitive information. Scoring happens in the browser, so this is suitable for a class practice quiz, not a high-stakes or proctored assessment. The Sheet remains in your Google account. Each submission creates one row with the timestamp, student name, score, selected answer, correct answer, and correctness for all 30 questions.
+
+After changing the Apps Script, choose **Deploy → Manage deployments**, edit the web app deployment, select **New version**, verify that **Execute as** is **Me** and **Who has access** is **Anyone**, then deploy. Keep using the deployment's `/exec` URL.
 
 ## Deploy to Vercel
 
