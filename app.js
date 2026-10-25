@@ -1,4 +1,4 @@
-const SHEETS_WEB_APP_URL = "";
+const SHEETS_WEB_APP_URL = "https://script.google.com/macros/s/AKfycbzxltVpWUzFoYu5uz-jzP1Dj8DBOJQ0y85UxXbPbLt6Ojo-AvAa2AKQ26AWzsx4G7yb/exec";
 
 const questions = [
   {
